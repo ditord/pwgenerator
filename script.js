@@ -57,4 +57,11 @@
         var passwordDisplay = document.getElementById("password-display");
         var password = generatePassword();
         passwordDisplay.innerText = password;
+        var copyButton = document.getElementById("copy-password-button");
+  copyButton.style.display = "inline-block";
       });
+
+      var copyButton = document.getElementById("copy-password-button");
+copyButton.addEventListener("click", function() {
+  copyPassword();
+});
