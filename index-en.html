@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Պատահական գաղտնաբառերի գեներատոր</title>
+    <title>Random password generator</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158769086-1"></script>
@@ -25,26 +25,26 @@
         <div class="logo">
             <img src="cyberhubamlogo.jpg" alt="">
         </div>
-        <h1>Գաղտնաբառերի գեներատոր</h1>
+        <h1>Password generator</h1>
         <form id="password-form">
-            <label for="password-length">Գաղտնաբառի երկարությունը:</label>
+            <label for="password-length">Password length:</label>
             <input type="number" id="password-length" name="password-length" min="8" max="128" value="16" required><br>
 
-            <label>Նշանների տիպերը:</label><br>
+            <label>Character Type:</label><br>
             <input type="checkbox" id="include-uppercase" name="include-uppercase" checked>
-            <label for="include-uppercase">Մեծատառ</label><br>
+            <label for="include-uppercase">Capital letters</label><br>
             <input type="checkbox" id="include-lowercase" name="include-lowercase" checked>
-            <label for="include-lowercase">Փոքրատառ</label><br>
+            <label for="include-lowercase">Small letters</label><br>
             <input type="checkbox" id="include-digits" name="include-digits" checked>
-            <label for="include-digits">Թիվ</label><br>
+            <label for="include-digits">Digits</label><br>
             <input type="checkbox" id="include-symbols" name="include-symbols" checked>
-            <label for="include-symbols">Սիմվոլ</label><br><br>
+            <label for="include-symbols">Symbols</label><br><br>
 
-            <button type="submit">Գեներացնել գաղտնաբառը</button>
+            <button type="submit">Generate password</button>
         </form>
 
         <div id="password-display"></div>
-        <button id="copy-password" style="display:none">Պատճենել</button>
+        <button id="copy-password" style="display:none">Copy</button>
     </div>
     <script src="script.js"></script>
 </body>
