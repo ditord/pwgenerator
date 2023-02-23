@@ -1,113 +1,127 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+* {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
+
+body {
+  height         : 100vh;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
-  background: #030359;
-}
-.container{
-  position: relative;
-  max-width: 100%;
-  padding: 0 15px;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  padding: 30px;
-  margin: 0 20px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background     : #030359;
 }
 
-.container .input-box{
+.container {
+  position     : relative;
+  max-width    : 100%;
+  padding      : 0 15px;
+  width        : 100%;
+  background   : #fff;
+  border-radius: 4px;
+  padding      : 30px;
+  margin       : 0 20px;
+  box-shadow   : 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .input-box {
   position: relative;
 }
+
 .title {
   text-align: center;
 }
-.input-box .show_hide{
-  position: absolute;
-  right: 16px;
-  top: 50%;
+
+.input-box .show_hide {
+  position : absolute;
+  right    : 16px;
+  top      : 50%;
   transform: translateY(-50%);
-  color: #A6A6A6;
-  padding: 5px;
-  cursor: pointer;
+  color    : #A6A6A6;
+  padding  : 5px;
+  cursor   : pointer;
 }
-.input-box input{
-  height: 60px;
-  width: 100%;
-  border: 2px solid #d3d3d3;
+
+.input-box input {
+  height       : 60px;
+  width        : 100%;
+  border       : 2px solid #d3d3d3;
   border-radius: 4px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  outline: none;
-  padding: 0 50px 0 16px;
+  font-size    : 18px;
+  font-weight  : 500;
+  color        : #333;
+  outline      : none;
+  padding      : 0 50px 0 16px;
 }
-.container .indicator{
+
+.container .indicator {
   display: none;
 }
-.container .indicator.active{
-  display: block;
+
+.container .indicator.active {
+  display   : block;
   margin-top: 14px;
 }
-.indicator .icon-text{
-  display: flex;
+
+.indicator .icon-text {
+  display    : flex;
   align-items: center;
 }
-.icon-text .error_icon{
+
+.icon-text .error_icon {
   margin-right: 8px;
 }
-.icon-text .text{
-  font-size: 14px;
-  font-weight: 500;
+
+.icon-text .text {
+  font-size     : 14px;
+  font-weight   : 500;
   letter-spacing: 1px;
 }
+
 .logo {
   text-align: center;
 }
 
 .button {
-  display: inline-block;
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
+  display         : inline-block;
+  padding         : 6px 12px;
+  font-size       : 14px;
+  font-weight     : 400;
+  line-height     : 1.42857143;
+  text-align      : center;
+  white-space     : nowrap;
+  vertical-align  : middle;
+  cursor          : pointer;
+  border          : 1px solid #ccc;
+  border-radius   : 4px;
+  text-decoration : none;
+  color           : #333;
   background-color: #fff;
 }
 
 .button:hover {
   background-color: #f5f5f5;
-  border-color: #adadad;
+  border-color    : #adadad;
 }
 
 .button:active {
   background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  border-color    : #8c8c8c;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 750px;
-    margin: 0 auto;
+    margin   : 0 auto;
   }
+
   h1 {
     font-size: 36px;
   }
+
   /* Add more styles for larger screens */
 }
 
@@ -115,11 +129,12 @@ body{
   .container {
     max-width: 970px;
   }
+
   /* Add more styles for even larger screens */
 }
 
 .container {
-  display: flex;
+  display       : flex;
   flex-direction: column;
 }
 
