@@ -14,7 +14,8 @@ body{
 }
 .container{
   position: relative;
-  max-width: 460px;
+  max-width: 100%;
+  padding: 0 15px;
   width: 100%;
   background: #fff;
   border-radius: 4px;
@@ -22,6 +23,7 @@ body{
   margin: 0 20px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
+
 .container .input-box{
   position: relative;
 }
@@ -96,4 +98,35 @@ body{
 .button:active {
   background-color: #e6e6e6;
   border-color: #8c8c8c;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  /* Add more styles for larger screens */
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+  /* Add more styles for even larger screens */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  align-self: center;
+}
+
+form {
+  margin-top: 20px;
 }
